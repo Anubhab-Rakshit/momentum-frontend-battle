@@ -133,13 +133,7 @@ export function UnconventionalNavbar() {
             </div>
 
             {/* Theme Toggle - Fixed positioning */}
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="relative p-2 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 w-10 h-10 flex items-center justify-center"
-            >
-              <Sun className="h-4 w-4 text-white rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 absolute" />
-              <Moon className="h-4 w-4 text-white rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 absolute" />
-            </button>
+            
 
             {/* Mobile Menu Button */}
             <button
