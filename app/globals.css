@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 200 90% 60%;
+    --primary-foreground: 224 71% 4%;
+    --secondary: 330 85% 65%;
+    --secondary-foreground: 224 71% 4%;
+    --accent: 50 95% 60%;
+    --accent-foreground: 224 71% 4%;
+    --muted: 222 47% 15%;
+    --muted-foreground: 210 40% 70%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 47% 18%;
+    --input: 222 47% 18%;
+    --ring: 200 90% 60%;
+    --radius: 0.75rem;
+    --animation-duration: 1s;
+    --transition-duration: 0.3s;
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 224 71% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+    --primary: 200 80% 50%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 330 75% 55%;
+    --secondary-foreground: 0 0% 98%;
+    --accent: 50 85% 50%;
+    --accent-foreground: 0 0% 98%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 222 47% 30%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 40% 90%;
+    --input: 210 40% 90%;
+    --ring: 200 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: none;
+  }
+  ::selection {
+    @apply bg-primary/70 text-primary-foreground;
+  }
+}
+
+/* Enhanced 3D Card Effects with Micro-interactions */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: all var(--transition-duration) ease;
+  will-change: transform;
+}
+
+.card-3d:hover {
+  transform: translateZ(10px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(96, 165, 250, 0.2), 0 0 40px rgba(96, 165, 250, 0.1);
+}
+
+.card-3d:active {
+  transform: translateZ(5px) rotateX(2deg) rotateY(2deg) scale(0.98);
+}
+
+/* Advanced Animations with Accessibility Support */
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 200% 50%;
+  }
+  75% {
+    background-position: 300% 50%;
+  }
+}
+
+.text-gradient-animated {
+  background: linear-gradient(
+    45deg,
+    hsl(var(--primary)),
+    hsl(var(--secondary)),
+    hsl(var(--accent)),
+    hsl(var(--primary)),
+    hsl(var(--secondary))
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift var(--animation-duration) ease-in-out infinite;
+  animation-duration: calc(var(--animation-duration) * 6);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 0.6s linear;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(-10px) rotate(-1deg);
+  }
+}
+
+.animate-float {
+  animation: float var(--animation-duration) ease-in-out infinite;
+  animation-duration: calc(var(--animation-duration) * 6);
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes micro-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.micro-bounce {
+  animation: micro-bounce 0.3s ease-in-out;
+}
+
+@keyframes micro-scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.micro-scale {
+  animation: micro-scale 0.2s ease-in-out;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* Micro-interaction Utilities */
+.hover-lift {
+  transition: transform var(--transition-duration) ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.hover-glow {
+  transition: box-shadow var(--transition-duration) ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+}
+
+.focus-ring {
+  transition: all var(--transition-duration) ease;
+}
+
+.focus-ring:focus {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.1);
+}
+
+/* Enhanced Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--secondary)));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, hsl(var(--primary) / 0.8), hsl(var(--secondary) / 0.8));
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide Default Cursor */
+* {
+  cursor: none !important;
+}
+
+/* Button and Input Micro-interactions */
+button,
+input,
+textarea,
+select {
+  transition: all var(--transition-duration) ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  transform: scale(1.02);
+}
+
+/* Loading States */
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted)) 25%,
+    hsl(var(--muted-foreground) / 0.1) 50%,
+    hsl(var(--muted)) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .card-3d:hover {
+    transform: translateZ(5px) rotateX(2deg) rotateY(2deg);
+  }
+
+  .text-gradient-animated {
+    background-size: 200% 200%;
+    animation-duration: calc(var(--animation-duration) * 4);
+  }
+
+  /* Reduce motion on mobile for better performance */
+  .animate-float {
+    animation-duration: calc(var(--animation-duration) * 4);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .animate-pulse,
+  .animate-spin,
+  .animate-bounce,
+  .animate-float,
+  .text-gradient-animated {
+    animation: none !important;
+  }
+
+  .card-3d {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
