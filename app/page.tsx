@@ -6,7 +6,6 @@ import { WorkShowcaseSection } from "@/components/sections/work-showcase-section
 import { ServicesSection } from "@/components/sections/services-section"
 import { RevolutionaryMetrics } from "@/components/sections/revolutionary-metrics"
 import { PremiumAnalyticsSection } from "@/components/sections/premium-analytics-section"
-import { ServicesSection } from "@/components/sections/services-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { ScrollTestimonials } from "@/components/sections/scroll-testimonials"
 import { ContactSection } from "@/components/sections/contact-section"
