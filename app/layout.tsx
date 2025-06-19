@@ -19,7 +19,11 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   title: "Momentum Labs - Shaping Tomorrow's Experiences",
   description: "Premium digital experiences that captivate and inspire",
-    generator: 'Anubhab Rakshit'
+  generator: 'Anubhab Rakshit',
+  authors: [{ name: "Anubhab Rakshit", url: "https://anubhab.co" }],
+  icons: {
+    icon: "/images/momentum-logo.png",
+  },
 }
 
 export default function RootLayout({

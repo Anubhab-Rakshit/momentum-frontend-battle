@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/sections/hero-section"
 import { ScrollTestimonials } from "@/components/sections/scroll-testimonials"
 import { WorkShowcaseSection } from "@/components/sections/work-showcase-section"
 import { EnhancedStatsSection } from "@/components/sections/enhanced-stats-section"
+import { RevolutionaryMetrics } from "@/components/sections/revolutionary-metrics"
 import { ModernChartSection } from "@/components/sections/modern-chart-section"
 import { ServicesSection } from "@/components/sections/services-section"
 import { AboutSection } from "@/components/sections/about-section"
@@ -14,7 +15,7 @@ export default function HomePage() {
       <HeroSection />
       <WorkShowcaseSection />
       <ServicesSection />
-      <EnhancedStatsSection />
+      <RevolutionaryMetrics />
       <ModernChartSection />
       <AboutSection />
       <ScrollTestimonials />
