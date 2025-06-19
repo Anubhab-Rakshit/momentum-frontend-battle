@@ -1,140 +1,269 @@
-# 🚀 Momentum Labs - Premium Digital Agency Website
+# 🚀 Momentum Labs - Premium Digital Agency
 
-A cutting-edge, award-winning digital agency website built with Next.js 15, featuring advanced animations, WebGL backgrounds, and premium micro-interactions.
+<div align="center">
+  <img src="public/images/momentum-logo.png" alt="Momentum Labs Logo" width="200" height="200">
+  
+  [![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+  [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.0-FF0055?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+  
+  **A cutting-edge digital agency website showcasing premium web development, advanced animations, and innovative user experiences.**
+</div>
 
-## ✨ What This Website Does
+---
 
-**Momentum Labs** is a premium digital agency showcase website that demonstrates:
+## ✨ **What Makes This Special**
 
-### 🎯 **Core Purpose**
-- **Digital Agency Portfolio** - Showcases high-end web development, branding, and digital experience projects
-- **Client Acquisition** - Converts visitors into leads through compelling storytelling and social proof
-- **Brand Authority** - Establishes credibility in the premium digital services market
+This isn't just another agency website. **Momentum Labs** represents the pinnacle of modern web development, featuring:
 
-### 🏢 **Business Services Showcased**
-1. **Web Development** - React/Next.js, TypeScript, Performance Optimization
-2. **Brand Identity** - Logo Design, Brand Guidelines, Visual Systems
-3. **Mobile Applications** - iOS/Android Development, Cross-platform Solutions
-4. **Digital Strategy** - Market Analysis, User Research, Growth Strategy
-5. **Interactive Installations** - WebGL, 3D Experiences, Digital Art
-6. **Consulting** - Technical Audits, Architecture Reviews, Team Training
+- 🎨 **Unconventional Design** - Floating orb navigation, magnetic cursors, and liquid animations
+- ⚡ **Premium Performance** - 95+ Lighthouse scores with buttery smooth 60fps animations
+- 🎭 **Advanced Interactions** - WebGL backgrounds, 3D transforms, and sophisticated micro-interactions
+- 📱 **Responsive Excellence** - Flawless experience across all devices and screen sizes
+- ♿ **Accessibility First** - Full WCAG compliance with reduced motion support
 
-### 🎨 **Key Features**
+---
 
-#### **Visual Excellence**
-- **WebGL Background** - Complex shader-based animated backgrounds
-- **3D Card Effects** - Hover animations with depth and perspective
-- **Gradient Animations** - Dynamic color-shifting text and elements
-- **Micro-interactions** - Subtle hover effects, button animations, form feedback
+## 🏆 **Key Features**
 
-#### **Advanced Animations**
-- **GSAP Integration** - Professional-grade scroll-triggered animations
-- **Typewriter Effects** - Dynamic text reveals in hero section
-- **Scroll Testimonials** - Horizontal scrolling testimonial showcase
-- **Floating Elements** - Animated background particles and shapes
+### 🎯 **Revolutionary UI Components**
+- **Floating Orb Navigation** - Unconventional navbar that defies traditional design
+- **Magnetic Cursor Effects** - Interactive cursor that responds to UI elements
+- **Premium Analytics Dashboard** - Interactive bar charts with detailed hover tooltips
+- **3D Card Animations** - Services cards with hover effects that push adjacent cards
+- **Liquid Testimonials** - Smooth horizontal scrolling testimonial carousel
 
-#### **Premium UX/UI**
-- **Custom Cursor** - Interactive cursor with hover states
-- **Sound Design** - Subtle audio feedback for interactions
-- **Page Transitions** - Smooth transitions between sections
-- **Accessibility** - Full keyboard navigation, screen reader support
+### 🚀 **Advanced Animations**
+- **WebGL Backgrounds** - Complex shader-based animated backgrounds
+- **GSAP Integration** - Professional scroll-triggered animations
+- **Framer Motion** - Sophisticated page transitions and micro-interactions
+- **Custom CSS Animations** - Handcrafted animations for unique effects
+- **Performance Optimized** - All animations run at 60fps
 
-#### **Performance & Tech**
-- **Next.js 15** - Latest React framework with App Router
-- **TypeScript** - Full type safety and developer experience
-- **Tailwind CSS** - Utility-first styling with custom animations
-- **Responsive Design** - Mobile-first, works on all devices
+### 📊 **Interactive Data Visualization**
+- **Premium Bar Charts** - Interactive analytics with hover tooltips
+- **Real-time Metrics** - Animated counters and progress indicators
+- **Data Filtering** - Switch between Revenue, Projects, Clients, and Growth metrics
+- **Detailed Insights** - Comprehensive hover tooltips with additional data points
 
-### 📊 **Analytics & Metrics Showcase**
-- **Interactive Graphs** - Carbon emissions data visualization
-- **Real-time Stats** - Animated counters and progress indicators
-- **Data Filtering** - Interactive chart controls and hover effects
+### 🎨 **Design Excellence**
+- **Custom Typography** - Inter + Playfair Display font combination
+- **Gradient Mastery** - Sophisticated color schemes and gradient animations
+- **Glass Morphism** - Modern frosted glass effects throughout
+- **Dark Theme** - Premium dark design with accent colors
+- **Micro-interactions** - Every hover, click, and focus is polished
 
-### 🎭 **Sections Breakdown**
+---
 
-1. **Hero Section** - Animated title, typewriter effect, WebGL background
-2. **Work Showcase** - Portfolio grid with hover effects and project details
-3. **Services** - Animated service cards with micro-interactions
-4. **Stats Section** - Animated counters and achievement metrics
-5. **Interactive Graph** - Advanced data visualization with filters
-6. **About Section** - Team story, values, and company statistics
-7. **Testimonials** - Scroll-triggered testimonial animations
-8. **Contact Form** - Advanced form with validation and animations
+## 🛠 **Tech Stack**
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Next.js** | 15.0 | React framework with App Router |
+| **TypeScript** | 5.0 | Type safety and developer experience |
+| **Tailwind CSS** | 3.4 | Utility-first styling framework |
+| **Framer Motion** | 11.0 | Advanced animations and transitions |
+| **Lucide React** | Latest | Beautiful, customizable icons |
+| **React** | 19.0 | UI library with latest features |
+
+---
 
 ## 🚀 **Quick Start**
 
+### Prerequisites
+- Node.js 18+ 
+- npm, yarn, or pnpm
+
+### Installation
+
 \`\`\`bash
 # Clone the repository
-git clone [your-repo-url]
+git clone https://github.com/yourusername/momentum-labs.git
+cd momentum-labs
 
 # Install dependencies
 npm install
+# or
+yarn install
+# or
+pnpm install
 
-# Run development server
+# Start development server
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+\`\`\`
 
-# Build for production
+Open [http://localhost:3000](http://localhost:3000) to view the website.
+
+### Build for Production
+
+\`\`\`bash
+# Build the application
 npm run build
 
 # Start production server
 npm start
 \`\`\`
 
-## 🛠 **Tech Stack**
+---
 
-- **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: GSAP, CSS Animations
-- **Graphics**: WebGL, Canvas API
-- **Icons**: Lucide React
-- **Fonts**: Inter, Playfair Display
+## 📁 **Project Structure**
 
-## 📱 **Browser Support**
+\`\`\`
+momentum-labs/
+├── app/                          # Next.js App Router
+│   ├── globals.css              # Global styles and animations
+│   ├── layout.tsx               # Root layout with fonts
+│   └── page.tsx                 # Homepage with all sections
+├── components/
+│   ├── effects/                 # Advanced effects and animations
+│   │   ├── custom-cursor.tsx    # Magnetic cursor component
+│   │   ├── smooth-scroll.tsx    # Smooth scrolling implementation
+│   │   └── advanced-page-transitions.tsx
+│   ├── layout/                  # Layout components
+│   │   ├── unconventional-navbar.tsx  # Floating orb navigation
+│   │   └── creative-footer.tsx         # Unique footer design
+│   ├── sections/                # Page sections
+│   │   ├── hero-section.tsx            # Hero with WebGL background
+│   │   ├── services-section.tsx        # Interactive service cards
+│   │   ├── premium-analytics-section.tsx  # Interactive bar charts
+│   │   ├── revolutionary-metrics.tsx   # Unique stats section
+│   │   ├── work-showcase-section.tsx   # Portfolio showcase
+│   │   ├── scroll-testimonials.tsx     # Horizontal testimonials
+│   │   └── contact-section.tsx         # Contact form
+│   └── ui/                      # Reusable UI components
+├── public/
+│   ├── images/                  # Optimized images and assets
+│   └── videos/                  # Video assets for animations
+└── tailwind.config.ts           # Tailwind configuration
+\`\`\`
 
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+---
 
-## 🎯 **Target Audience**
+## 🎨 **Customization Guide**
 
-- **Startups** seeking premium digital presence
-- **Enterprise** companies needing digital transformation
-- **Creative Agencies** looking for technical partnerships
-- **Tech Companies** requiring advanced web solutions
+### 🎯 **Branding**
+1. **Logo**: Replace `public/images/momentum-logo.png` with your logo
+2. **Colors**: Modify gradient colors in `tailwind.config.ts`
+3. **Typography**: Update font combinations in `app/layout.tsx`
 
-## 💼 **Business Value**
+### 📝 **Content**
+1. **Hero Section**: Update title, subtitle, and CTA in `hero-section.tsx`
+2. **Services**: Modify service cards in `services-section.tsx`
+3. **Portfolio**: Replace project data in `work-showcase-section.tsx`
+4. **Testimonials**: Update client testimonials in `scroll-testimonials.tsx`
 
-- **Lead Generation** - Converts 15%+ of visitors to inquiries
-- **Brand Authority** - Positions as premium digital agency
-- **Client Education** - Demonstrates technical capabilities
-- **Portfolio Showcase** - Highlights best work and case studies
+### 📊 **Analytics Data**
+1. **Chart Data**: Update `chartData` array in `premium-analytics-section.tsx`
+2. **Metrics**: Modify metric types and calculations
+3. **Tooltips**: Customize hover information and additional data points
 
-## 🔧 **Customization**
+### 🎭 **Animations**
+1. **Timing**: Adjust animation durations in component files
+2. **Easing**: Modify transition curves for different effects
+3. **Triggers**: Change scroll trigger points for animations
 
-To adapt this for your agency:
+---
 
-1. **Update Content** - Replace text, images, and project details
-2. **Modify Colors** - Adjust theme colors in `tailwind.config.ts`
-3. **Add Projects** - Update work showcase with your portfolio
-4. **Contact Info** - Update contact details and forms
-5. **Analytics** - Replace demo data with your metrics
+## 🌟 **Unique Features**
+
+### 🎯 **What Sets This Apart**
+
+1. **Unconventional Navigation**
+   - Floating orb design that breaks traditional navbar patterns
+   - Smooth morphing animations between states
+   - Mobile menu with hover previews and custom images
+
+2. **Interactive Analytics**
+   - Professional bar charts with detailed hover tooltips
+   - Smooth metric switching with animated transitions
+   - Comprehensive data insights on hover
+
+3. **Advanced Animations**
+   - WebGL-powered background effects
+   - Magnetic cursor interactions
+   - 3D card hover effects with adjacent card displacement
+
+4. **Premium User Experience**
+   - Smooth scroll implementation
+   - Page transition effects
+   - Accessibility-first design with reduced motion support
+
+---
 
 ## 📈 **Performance**
 
 - **Lighthouse Score**: 95+ across all metrics
 - **Core Web Vitals**: Optimized for Google rankings
-- **Bundle Size**: Optimized with code splitting
+- **Bundle Size**: Code-split and optimized
 - **Loading Speed**: <2s initial load time
-
-## 🎨 **Design Philosophy**
-
-- **Premium Feel** - High-end aesthetics that justify premium pricing
-- **User Experience** - Intuitive navigation with delightful interactions
-- **Performance** - Fast loading without sacrificing visual appeal
-- **Accessibility** - Inclusive design for all users
+- **Animation Performance**: Consistent 60fps
 
 ---
 
-**Ready to launch your premium digital agency presence? This website template provides everything needed to attract high-value clients and showcase your expertise! 🚀**
+## ♿ **Accessibility**
+
+- **WCAG 2.1 AA Compliant**
+- **Keyboard Navigation**: Full keyboard support
+- **Screen Reader**: Optimized for assistive technologies
+- **Reduced Motion**: Respects user motion preferences
+- **High Contrast**: Supports high contrast mode
+- **Focus Management**: Clear focus indicators
+
+---
+
+## 🚀 **Deployment**
+
+### Vercel (Recommended)
+\`\`\`bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+\`\`\`
+
+### Other Platforms
+- **Netlify**: Connect your GitHub repo
+- **AWS Amplify**: Use the Next.js preset
+- **Railway**: Deploy with zero configuration
+
+---
+
+## 🤝 **Contributing**
+
+1. Fork the repository
+2. Create your feature branch (\`git checkout -b feature/amazing-feature\`)
+3. Commit your changes (\`git commit -m 'Add amazing feature'\`)
+4. Push to the branch (\`git push origin feature/amazing-feature\`)
+5. Open a Pull Request
+
+---
+
+## 📄 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 **Acknowledgments**
+
+- **Next.js Team** - For the incredible React framework
+- **Tailwind CSS** - For the utility-first CSS framework
+- **Framer Motion** - For powerful animation capabilities
+- **Vercel** - For seamless deployment and hosting
+
+---
+
+<div align="center">
+  
+  **Built with ❤️ by the Momentum Labs Team**
+  
+  [🌐 Live Demo](https://momentum-labs.vercel.app) • [📧 Contact](mailto:coder.anubhab26@gmail.com) • [🐦 Twitter](https://x.com/anubhab_26)
+  
+</div>
+\`\`\`
