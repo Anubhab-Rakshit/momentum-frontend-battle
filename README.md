@@ -79,7 +79,7 @@ This isn't just another agency website. **Momentum Labs** represents the pinnacl
 
 \`\`\`bash
 # Clone the repository
-git clone https://github.com/yourusername/momentum-labs.git
+git clone https://github.com/Anubhab-Rakshit/momentum-labs.git
 cd momentum-labs
 
 # Install dependencies
