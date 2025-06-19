@@ -14,15 +14,21 @@ import { AdvancedPageTransitions } from "@/components/effects/advanced-page-tran
 
 export default function HomePage() {
   return (
-    <div className="relative" id="main-content">
-      <HeroSection />
-      <WorkShowcaseSection />
-      <ServicesSection />
-      <RevolutionaryMetrics />
-      <ModernChartSection />
-      <AboutSection />
-      <ScrollTestimonials />
-      <InnovativeContact />
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      <SmoothScroll />
+      <AdvancedPageTransitions />
+      <div className="h-20"></div>
+
+      <Suspense fallback={<div className="h-screen bg-black" />}>
+        <HeroSection />
+        <WorkShowcaseSection />
+        <ServicesSection />
+        <PremiumAnalyticsSection />
+        <RevolutionaryMetrics />
+        <AboutSection />
+        <ScrollTestimonials />
+        <ContactSection />
+      </Suspense>
     </div>
   )
 }
