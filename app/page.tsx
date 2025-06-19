@@ -8,7 +8,7 @@ import { RevolutionaryMetrics } from "@/components/sections/revolutionary-metric
 import { PremiumAnalyticsSection } from "@/components/sections/premium-analytics-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { ScrollTestimonials } from "@/components/sections/scroll-testimonials"
-import { ContactSection } from "@/components/sections/contact-section"
+import { InnovativeContact } from "@/components/sections/innovative-contact"
 
 export default function HomePage() {
   return (
@@ -25,7 +25,7 @@ export default function HomePage() {
         <RevolutionaryMetrics />
         <AboutSection />
         <ScrollTestimonials />
-        <ContactSection />
+        <InnovativeContact />
       </Suspense>
     </div>
   )
