@@ -1,13 +1,17 @@
 "use client"
+ 
+import { Suspense } from "react"
 import { HeroSection } from "@/components/sections/hero-section"
-import { ScrollTestimonials } from "@/components/sections/scroll-testimonials"
 import { WorkShowcaseSection } from "@/components/sections/work-showcase-section"
-import { EnhancedStatsSection } from "@/components/sections/enhanced-stats-section"
+import { ServicesSection } from "@/components/sections/services-section"
 import { RevolutionaryMetrics } from "@/components/sections/revolutionary-metrics"
-import { ModernChartSection } from "@/components/sections/modern-chart-section"
+import { PremiumAnalyticsSection } from "@/components/sections/premium-analytics-section"
 import { ServicesSection } from "@/components/sections/services-section"
 import { AboutSection } from "@/components/sections/about-section"
-import { InnovativeContact } from "@/components/sections/innovative-contact"
+import { ScrollTestimonials } from "@/components/sections/scroll-testimonials"
+import { ContactSection } from "@/components/sections/contact-section"
+import { SmoothScroll } from "@/components/effects/smooth-scroll"
+import { AdvancedPageTransitions } from "@/components/effects/advanced-page-transitions"
 
 export default function HomePage() {
   return (
