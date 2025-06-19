@@ -9,13 +9,13 @@ import { PremiumAnalyticsSection } from "@/components/sections/premium-analytics
 import { AboutSection } from "@/components/sections/about-section"
 import { ScrollTestimonials } from "@/components/sections/scroll-testimonials"
 import { ContactSection } from "@/components/sections/contact-section"
-import { SmoothScroll } from "@/components/effects/smooth-scroll"
+
 import { AdvancedPageTransitions } from "@/components/effects/advanced-page-transitions"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      <SmoothScroll />
+
       <AdvancedPageTransitions />
       <div className="h-20"></div>
 
